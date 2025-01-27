@@ -5,7 +5,7 @@ int main() {
     temp=a;
     a=b;
     b=temp;
-    printf("%d",a);
+    printf("%d\t",a);
     printf("%d",b);
     return 0;
 }
