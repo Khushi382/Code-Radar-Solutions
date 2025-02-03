@@ -9,11 +9,15 @@ int main() {
             count++;
         }
         if(count>2){
-            printf("not Prime");
+            printf("Not Prime");
         }
         else{
             printf("Prime");
-        }}
+        }
+        }
+    else{
+        printf("Not Prime");
+    }
     
     
 
