@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int a;
+    int a,i;
     scanf("%d",&a);
     if(a<2)
     {
@@ -17,14 +17,6 @@ int main() {
             
         }
 
-    printf("Prime");
-        
-    
-        
-    
-    
-
-
-
+    //printf("Prime");
     return 0;
 }
