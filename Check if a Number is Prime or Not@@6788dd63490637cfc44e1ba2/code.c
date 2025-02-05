@@ -2,10 +2,6 @@
 int main() {
     int a;
     scanf("%d",&a);
-    if(a==2)
-    {
-        printf("Prime");
-    }
 
     for(int i=2;i<=a/2;i++)
     {
