@@ -5,7 +5,7 @@ int main() {
     int x;
     scanf("%d",&n);
     scanf("%d",&i);
-    x=n & (n-1);
+    x=n | (i-1);
     printf("%d",x);
     
     return 0;
