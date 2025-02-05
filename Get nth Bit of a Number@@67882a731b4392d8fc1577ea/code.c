@@ -7,10 +7,10 @@ int main() {
     int mask=1<<(i-1);
     if(x & mask){
         if(0){
-            printf("0");
+            printf("1");
         }
         else{
-            printf("1");
+            printf("0");
         }
     }
     return 0;
