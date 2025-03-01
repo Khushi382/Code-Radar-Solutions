@@ -2,12 +2,12 @@
 int main(){
     int n,i,j,k;
     scanf("%d",&n);
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=n-i;j++){
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n-i;j++){
             printf(" ");
         }
-        for(int k=1;k<=2*i-1;k++){
-            if(k==1||k==n){
+        for( k=1;k<=2*i-1;k++){
+            if(k==1||k==2*i-1){
                 printf("1");
             }
             else{
