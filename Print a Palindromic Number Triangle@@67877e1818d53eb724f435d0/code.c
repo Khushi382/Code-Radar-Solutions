@@ -7,11 +7,11 @@ int main(){
             printf(" ");
         }
         for(int k=1;k<=2*i-1;k++){
-            if(j==1&&j==n){
-                printf("1");
+            if(j==1||j==n){
+                printf(1);
             }
             else{
-                printf("%d",i);
+                printf("%d",k);
             }
         }
         printf("\n");
