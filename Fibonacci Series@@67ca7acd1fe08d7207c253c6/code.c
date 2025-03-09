@@ -1,4 +1,4 @@
-fibonacciSeries(int n){
+fibonacciSeries( n){
     static int t1=0;
     static int t2=1;
     int nt;
