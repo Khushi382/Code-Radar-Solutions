@@ -11,7 +11,7 @@ int main() {
     scanf("%d", &bitPosition);
 
     setNthBit(&number, bitPosition);
-    printf("%d", bitPosition, number);
+    printf("%d",number);
 
     return 0;
 }
