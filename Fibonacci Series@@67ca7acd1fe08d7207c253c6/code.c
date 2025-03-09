@@ -4,10 +4,10 @@ int fibonacciSeries(int  n){
     int nt;
     if(n!=0){
         nt=t1+t2;
+        printf(" %d",nt);
         t1=t2;
         t2=nt;
-        printf("1 2");
-        printf(" %d",nt);
+        
         fibonacciSeries(n-1);
     }
 
