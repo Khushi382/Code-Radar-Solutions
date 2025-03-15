@@ -8,3 +8,4 @@ int isPrime(int a,int b){
     }
     return 1;
 }
+printPrimeInRange(a, b);
