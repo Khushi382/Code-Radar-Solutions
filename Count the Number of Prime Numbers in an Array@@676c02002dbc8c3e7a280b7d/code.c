@@ -7,11 +7,6 @@ int isprime(int n) {
     }
     return 1;
 }
-
-
-
-
-
 int main(){
     int a[100];
     int n;
