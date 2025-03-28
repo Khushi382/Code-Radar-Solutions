@@ -9,7 +9,7 @@ int main(){
     }
     for(int i=n-1;i>=0;i--){
         int rev=a[i];
-        if(rev==a[100]){
+        if(rev==a[n-1-i]){
             printf("YES");
         }
         else{
