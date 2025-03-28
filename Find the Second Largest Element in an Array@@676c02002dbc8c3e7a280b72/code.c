@@ -17,6 +17,9 @@ int main() {
             secondLargest = largest;
             largest = a[i];
         } 
+        else if (a[i] > secondLargest && a[i] != largest) {
+            secondLargest = a[i];   
+        }
     }
     printf("%d\n",secondLargest);
     }
