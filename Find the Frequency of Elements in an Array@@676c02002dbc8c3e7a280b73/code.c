@@ -12,11 +12,12 @@ int main(){
     for(int i=0;i<n;i++){
         freq[a[i]]++;
     }
-    //for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){
     if(freq[a[i]]>0){
         printf("%d %d\n",a[i],freq[a[i]]);
+        freq[a[i]]=0;
     }
-    //}
+    }
     
     return 0;
 }
