@@ -10,9 +10,11 @@ int binarySearch(int arr[],int n, int target){
         }
         if(arr[mid]<target){
             left=mid+1;
+            return mid;
         }
         else{
             right=mid-1;
+            return mid;
         }
     }
 }
