@@ -1,11 +1,13 @@
 int isPrime(int a,int b){
     for(int i=a;i<=b;i++){
-        for(int n=2;n*n<=i;n++){
-            if(i%n==0){
+            if(i%a==0 && i%b==0){
                 return 0;
             }
         }
     }
     return 1;
+    
+
+int printPrimeInRange(int a, int b){
+    printf("%d ",i);
 }
-printPrimeInRange(a, b);
