@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int a[100];
@@ -7,7 +8,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    int largest = a[0], secondLargest = -1;
+    int largest = abs(a[0]), secondLargest = -1;
     if(n<2){
         printf("%d",-1);
         return 0;
@@ -15,10 +16,10 @@ int main() {
     for (int i = 1; i < n; i++) {
         if (a[i] > largest) {
             secondLargest = largest;
-            largest = a[i];
+            largest = abs(a[i]);
         } 
-        else if (a[i] > secondLargest && a[i] != largest) {
-            secondLargest = a[i];   
+        else if (abs(a[i]) > secondLargest && abs(a[i]) != largest) {
+            secondLargest = abs(a[i]);   
         }
     }
     printf("%d\n",secondLargest);
