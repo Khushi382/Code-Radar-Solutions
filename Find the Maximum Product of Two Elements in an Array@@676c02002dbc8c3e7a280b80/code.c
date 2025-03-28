@@ -15,8 +15,12 @@ int main(){
             max=a[i];
             int pr=smax*max;
         }
-        printf("%d",pr);
+         else if (a[i] > smax && a[i] != max) {
+            smax = a[i];
+        }   
     }
+    int pr = smax * max;
+        printf("%d", pr); 
 
 
 
