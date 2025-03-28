@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int a[100];
     int sum=0;
@@ -14,8 +15,8 @@ int main(){
             sum+=rem;
             a[i]=a[i]/10;
         }
+        printf("%d ",abs(sum));
     }
-        printf("%d",sum);
 
     
     return 0;
