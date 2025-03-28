@@ -8,15 +8,15 @@ int main(){
     scanf("%d",&a[i]);
     }
     for(int i=0;i<n;i++){
+        int sum=0;
         while(a[i]!=0){
             int rem=a[i]%10;
             sum+=rem;
             a[i]=a[i]/10;
         }
     }
-    for(int i=0;i<n;i++){
         printf("%d",sum);
-    }
+
     
     return 0;
 }
