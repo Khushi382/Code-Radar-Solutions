@@ -1,13 +1,16 @@
-int factorialRange(int start,int end){
+int factorial(int n) {
+    int fact = 1;
+    for (int i = 1; i <= n; i++) {
+        fact *= i;
+    }
+    return fact;
+}
+void printFactorialsInRange(int start, int end) {
     if (start < 0 || start > end) {
         printf("Invalid range\n");
-        return -1; 
+        return;
     }
-
-    int fact = 1;
     for (int i = start; i <= end; i++) {
-        fact *= i;  
+        printf("Factorial of %d is: %d\n", i, factorial(i));
     }
-
-    return fact;
 }
