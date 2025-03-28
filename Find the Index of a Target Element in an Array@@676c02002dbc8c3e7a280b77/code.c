@@ -14,10 +14,6 @@ int main() {
             printf("%d",i);
             break;
         }
-        else{
-            printf("%d",-1);
-            break;
-        }
     }
 
 
