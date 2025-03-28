@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     int a[100];
     int sum=0;
@@ -10,13 +11,13 @@ int main(){
     int max=a[0];
     int smax=-1;
     for(int i=0;i<n;i++){
-        if(a[i]>max){
+        if(abs(a[i])>max){
             smax=max;
-            max=a[i];
+            max=abs(a[i]);
             int pr=smax*max;
         }
-         else if (a[i] > smax && a[i] != max) {
-            smax = a[i];
+         else if (abs(a[i]) > smax && abs(a[i]) != max) {
+            smax = abs(a[i]);
         }   
     }
     int pr = smax * max;
