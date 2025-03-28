@@ -1,5 +1,8 @@
 #include <stdio.h>
 int ispal(int num){
+    if (num < 0) {
+        return 0;  
+    }
     int sum=0;
     int original=num;
     while(num!=0){
