@@ -1,12 +1,12 @@
 #include <stdio.h>
 int isMonotonic(int a[],int n){
-    int increasing=0,decreasing=0;
-    for(int i=0;i<n;i++){
+    int increasing=1,decreasing=1;
+    for(int i=0;i<n-1;i++){
         if(a[i]<a[i+1]){
             decreasing=0;
         }
         if(a[i]>a[i+1]){
-            increasing=1;
+            increasing=0;
         }
     }
     if(increasing||decreasing){
