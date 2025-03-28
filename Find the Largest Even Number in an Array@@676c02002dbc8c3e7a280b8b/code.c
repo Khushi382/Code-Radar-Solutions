@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 int check(int a[],int n){
     int maxeven=-1;
     for(int i=0;i<n;i++){
