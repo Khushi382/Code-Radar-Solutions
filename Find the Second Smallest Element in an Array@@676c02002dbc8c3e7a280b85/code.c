@@ -15,6 +15,9 @@ int main() {
             smin=min;
             min=abs(a[i]);
         }
+        else if (abs(a[i]) > min && (smin == -1 || abs(a[i]) < smin)) {
+            smin = abs(a[i]);
+        }
     }
     printf("%d",smin);
 
