@@ -10,8 +10,8 @@ int main() {
     int largest = a[0], secondLargest = -1;
     if(n<2){
         printf("%d",-1);
+        return 0;
     }
-    else{
     for (int i = 1; i < n; i++) {
         if (a[i] > largest) {
             secondLargest = largest;
@@ -22,7 +22,7 @@ int main() {
         }
     }
     printf("%d\n",secondLargest);
-    }
+    
 
     return 0;
 }
