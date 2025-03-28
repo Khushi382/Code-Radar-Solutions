@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 int main(){
-    a[100];
+    int a[100];
     int n;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
@@ -9,9 +9,13 @@ int main(){
     }
     int right=n-1;
     int left=0;
-    while(left<=right){
-        int mid=ceil((left+right))/2;
-        printf("%d",a[mid]);
+    if(n%2!=0){
+        int res=a[n/2];
+        printf("%d",res);
+    }
+    else{
+        res=a[n/2-1]+a[n/2]/2;
+        printf("%d",res);
     }
     return 0;
 }
