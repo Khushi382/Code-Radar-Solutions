@@ -1,8 +1,5 @@
 #include <stdio.h>
 int isprime(int n) {
-    if (n<= 1) {
-        return 0;
-    }
     for (int i = 2; i * i <= n; i++) {
         if (n% i == 0) {
             return 0; 
@@ -28,11 +25,13 @@ int main(){
             count ++;
         }
     }
-    if(count>=2){
-        printf("%d",count);
+    if (count == 1) {
+        printf("1");  
+    } else if (count <= 2) {
+        printf("0");  
+    } else {
+        printf("%d", count); 
     }
-    else{
-        printf("0");
-    }
+
     return 0;
 }
