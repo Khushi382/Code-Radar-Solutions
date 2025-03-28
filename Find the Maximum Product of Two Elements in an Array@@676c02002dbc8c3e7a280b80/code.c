@@ -12,8 +12,8 @@ int main(){
     for(int i=0;i<n;i++){
         if(a[i]>max){
             smax=max;
-            max=a[i]
-            pr=smax*max;
+            max=a[i];
+            int pr=smax*max;
         }
         printf("%d",pr);
     }
