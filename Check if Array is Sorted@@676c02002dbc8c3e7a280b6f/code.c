@@ -21,7 +21,7 @@ int main(){
         scanf("%d ",&a[i]);
     }
 
-    if(check==1){
+    if(check(arr,n)==1){
         printf("Sorted");
     }
     else{
