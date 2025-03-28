@@ -14,6 +14,7 @@ int main(){
         }
         else{
             printf("NO");
+            break;
         }
     }
     return 0;
