@@ -6,9 +6,9 @@ int selectionSort(int arr[],int n){
                 min=j;
             }
             if(min!=0){
-                int temp=arr[i];
-                arr[i]=arr[i+1];
-                arr[i+1]=temp;
+                int temp=arr[min];
+                arr[min]=arr[i];
+                arr[i]=temp;
             }
         }
     }
