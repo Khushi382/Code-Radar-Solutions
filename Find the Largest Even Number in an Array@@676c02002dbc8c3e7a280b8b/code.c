@@ -7,10 +7,10 @@ int main(){
     }
     int maxeven=a[0];
     for(int i=0;i<n;i++){
-        if(a[i]%2>max){
-            max=a[i];
+        if(a[i]%2>maxeven){
+            maxeven=a[i];
         }
     }
-    printf("%d",max);
+    printf("%d",maxeven);
     return 0;
 }
