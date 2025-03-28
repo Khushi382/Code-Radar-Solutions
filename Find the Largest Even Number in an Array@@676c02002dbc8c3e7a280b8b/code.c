@@ -6,10 +6,10 @@ int check(int a[],int n){
         if(a[i]>maxeven){
             maxeven=a[i];
         }
-        return 0;
+        
         }
     }
-    return -1;
+    return maxeven;
 }
 int main(){
     int a[100];
@@ -19,8 +19,11 @@ int main(){
         scanf("%d",&a[i]);
     }
     for(int i=0;i<n;i++){
-        if(check(a,n)){
-            printf("%d",a[i]);
+        if(not -1){
+            printf("%d",check(a,n));
+        }
+        else{
+            printf("%d",-1);
         }
     }
     return 0;
