@@ -1,11 +1,10 @@
 #include<stdio.h>
-#include <stdlib.h>
 int check(int a[],int n){
     int maxeven=-1;
     for(int i=0;i<n;i++){
-        if(abs(a[i])%2==0){
-        if(abs(a[i])>maxeven){
-            maxeven=abs(a[i]);
+        if(a[i]%2==0){
+        if(a[i]>maxeven){
+            maxeven=a[i];
         }
         }
     }
