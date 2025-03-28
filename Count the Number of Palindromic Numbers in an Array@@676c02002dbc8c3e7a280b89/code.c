@@ -4,7 +4,7 @@ int ispal(int num){
     int original=num;
     while(num!=0){
         int rem=num%10;
-        int sum=sum*10+rem;
+        sum=sum*10+rem;
         num=num/10;
     }
     return (sum==original);
@@ -21,7 +21,7 @@ int main() {
     }
     int count=0;
    for(int i=0;i<n;i++){
-    if(ispal(num)){
+    if(ispal(a[i])){
       count++;
     }
    }
