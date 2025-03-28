@@ -12,9 +12,7 @@ int main() {
         if(freq[a[i]]>n/2){
             printf("%d",a[i]);
         }
-        else{
-            printf("%d",-1);
-        }
+        
     }
 
 
