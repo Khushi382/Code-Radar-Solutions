@@ -14,7 +14,8 @@ int main() {
     }
     for(int i=0;i<n;i++){
         if(freq[a[i]]>max){
-            printf("%d",a[i]);
+            printf("%d ",a[i]);
+            return 0;
         }
     }
 
