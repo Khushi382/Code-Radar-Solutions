@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     int a[100];
@@ -10,9 +11,9 @@ int main() {
     int min=a[0];
     int smin=-1;
     for(int i=0;i<n;i++){
-        if(a[i]<min){
+        if(abs(a[i])<min){
             smin=min;
-            min=a[i];
+            min=abs(a[i]);
         }
     }
     printf("%d",smin);
