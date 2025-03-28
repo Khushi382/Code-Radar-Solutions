@@ -9,12 +9,13 @@ int main(){
     }
     int right=n-1;
     int left=0;
+    int res;
     if(n%2!=0){
-        int res=a[n/2];
+        res=a[n/2];
         printf("%d",res);
     }
     else{
-        res=a[n/2-1]+a[n/2]/2;
+        res=(a[n/2-1]+a[n/2])/2;
         printf("%d",res);
     }
     return 0;
