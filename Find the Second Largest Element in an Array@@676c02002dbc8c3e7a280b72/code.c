@@ -8,7 +8,7 @@ int main() {
         scanf("%d", &a[i]);
     }
     int largest = a[0], secondLargest = -1;
-    if(n<=2){
+    if(n<2){
         printf("%d",-1);
     }
     else{
