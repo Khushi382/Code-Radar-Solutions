@@ -4,13 +4,13 @@ int main(){
     int a[100];
     int n;
     scanf("%d",&n);
-     int temp=a[n];
+     int temp=a[n-1];
     for(int i=0;i<n;i++){
         scanf("%d\n",a[i]);
     }
     int k;
     scanf("%d",&k);
-    for(int i=n-2;i>0;i--){
+    for(int i=n-1;i>0;i--){
         a[i+1]=a[i];
     }
     a[0]=temp;
