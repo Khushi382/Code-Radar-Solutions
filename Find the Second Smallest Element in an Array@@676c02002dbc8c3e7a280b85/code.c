@@ -4,22 +4,38 @@
 int main() {
     int a[100];
     int n;
-    scanf("%d", &n);  
+    scanf("%d", &n);
+
+    // Reading array elements
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    int min=a[0];
-    int smin=-1;
-    for(int i=0;i<n;i++){
-        if(abs(a[i])<min){
-            smin=min;
-            min=abs(a[i]);
-        }
-        else if (abs(a[i]) > min && abs(a[i]) < smin) {
-            smin = abs(a[i]);
+
+    if (n == 1) {
+        printf("-1\n"); // If there's only one element, output -1
+        return 0;
+    }
+
+    int min = abs(a[0]);
+    int smin = abs(a[0]);
+
+    // Find the smallest and second smallest absolute values
+    for (int i = 1; i < n; i++) {
+        int abs_val = abs(a[i]);
+        if (abs_val < min) {
+            smin = min; // The current smallest becomes the second smallest
+            min = abs_val; // Update the smallest
+        } else if (abs_val > min && abs_val < smin) {
+            smin = abs_val; // Update the second smallest
         }
     }
-    printf("%d",smin);
+
+    // If second minimum is still the same as the first minimum, it means no distinct second minimum exists.
+    if (smin == min) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", smin);
+    }
 
     return 0;
 }
