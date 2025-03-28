@@ -13,7 +13,7 @@ int main()
         freq[a[i]]++;
      }
      if(freq[a[i]]>1){
-        printf("%d",a[i])
+        printf("%d",a[i]);
      }
     return 0;
 }
