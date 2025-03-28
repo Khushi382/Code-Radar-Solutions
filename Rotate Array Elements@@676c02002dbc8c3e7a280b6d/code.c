@@ -2,9 +2,9 @@
 
 int main(){
     int a[100];
-    int temp=a[n];
     int n;
     scanf("%d",&n);
+     int temp=a[n];
     for(int i=0;i<n;i++){
         scanf("%d ",a[i]);
     }
