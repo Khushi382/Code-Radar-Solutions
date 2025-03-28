@@ -15,7 +15,7 @@ int main() {
             smin=min;
             min=abs(a[i]);
         }
-        else if (abs(a[i]) > min && (smin == -1 || abs(a[i]) < smin)) {
+        else if (abs(a[i]) > min && abs(a[i]) < smin)) {
             smin = abs(a[i]);
         }
     }
