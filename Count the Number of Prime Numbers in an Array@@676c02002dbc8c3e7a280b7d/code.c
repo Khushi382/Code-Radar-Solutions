@@ -28,7 +28,7 @@ int main(){
             count ++;
         }
     }
-    if(count>1){
+    if(count>=2){
         printf("%d",count);
     }
     else{
