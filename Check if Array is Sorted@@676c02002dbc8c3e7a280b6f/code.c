@@ -6,11 +6,12 @@ int check(int a[],int n){
             if(a[j]<a[j+1]){
                 int temp=a[j];
                 a[j]=a[j+1];
-                a[j+1]=temp;           
+                a[j+1]=temp;
+                return 1;           
             }
         }
     }
-    return 1;
+    return 0;
 }
 
 int main(){
@@ -21,7 +22,7 @@ int main(){
         scanf("%d ",&a[i]);
     }
 
-    if(check(arr,n)==1){
+    if(check(a,n)==1){
         printf("Sorted");
     }
     else{
