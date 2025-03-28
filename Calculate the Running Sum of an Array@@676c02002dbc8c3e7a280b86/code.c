@@ -7,12 +7,10 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    for(int i=0;i<n;i++){
-        int t1=a[0],t2=a[1],nt;
-        printf("%d ",t1);
-        nt=t1+t2;
-        t1=t2;
-        t2=nt;
+    int sum=0;
+    for (int i = 0; i < n; i++) {
+        sum += a[i];  // Add the current element to sum
+        printf("%d ", sum);  // Print the cumulative sum
     }
 
 
