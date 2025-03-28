@@ -8,16 +8,17 @@ int main() {
         scanf("%d", &a[i]);
     }
     int largest = a[0], secondLargest = -1;
+    if(n<=2){
+        printf("%d",-1);
+    }
+    else{
     for (int i = 1; i < n; i++) {
         if (a[i] > largest) {
             secondLargest = largest;
             largest = a[i];
         } 
     }
-    if (secondLargest == -1) {
-        printf("No second largest element.\n");
-    } else {
-        printf("Second largest element: %d\n", secondLargest);
+    printf("%d\n",secondLargest);
     }
 
     return 0;
