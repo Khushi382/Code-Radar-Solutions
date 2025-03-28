@@ -2,7 +2,7 @@
 int ispal(int num){
     int sum=0;
     int original=num;
-    while(n!=0){
+    while(num!=0){
         int rem=n%10;
         int sum=sum*10+rem;
         n=n/10;
