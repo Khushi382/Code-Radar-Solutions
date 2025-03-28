@@ -12,6 +12,7 @@ int main(){
     for(int i=0;i<n;i++){
         if(a[i]>max){
             max=a[i];
+            break;
         }
     }
     printf("%d",max);
