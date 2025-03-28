@@ -10,13 +10,13 @@ int main(){
     }
     int k;
     scanf("%d",&k);
-    for(int i=n-1;i>=k-1;i--){
-        a[i+1]=a[i]
+    for(int i=n-1;i>0;i--){
+        a[i+1]=a[i];
     }
     a[0]=temp;
-    for(int i=0;i<n;i++{
+    for(int i=0;i<n;i++){
         printf("%d\n",a[i]);
-    })
+    }
 
 
 
