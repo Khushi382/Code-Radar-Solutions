@@ -1,10 +1,11 @@
 #include <stdio.h>
 int check(int a[],int n){
     for(int i=0;i<n;i++){
-        int max=0;
+        int max=a[0];
         if(a[i]>a[i+1] && a[i]>a[i-1]){
             max=a[i];
         }
+         return max;
     }
 }
 
