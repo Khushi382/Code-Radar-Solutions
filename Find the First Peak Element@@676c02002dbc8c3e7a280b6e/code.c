@@ -3,10 +3,10 @@ int check(int a[],int n){
     for(int i=0;i<n;i++){
         int max=a[0];
         if(a[i]<a[i+1] && a[i+1]>a[i+2]){
-            max=a[i];
+            return a[i];
         }
-         return max;
     }
+    return -1;
 }
 
 int main(){
