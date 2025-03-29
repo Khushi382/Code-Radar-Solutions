@@ -4,11 +4,9 @@ int check(int a[],int n){
         int max=0;
         if(a[i]>a[i+1] && a[i]>a[i-1]){
             max=a[i];
-            break;
             return 0;
         }
     }
-    return -1;
 }
 
 int main(){
