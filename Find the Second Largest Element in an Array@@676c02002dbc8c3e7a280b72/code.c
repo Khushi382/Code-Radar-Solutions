@@ -25,7 +25,7 @@ int main() {
         scanf("%d", &a[i]);
     }
     int res=largest(a,n);
-    if(res!=0 && n>1){
+    if(res!=0 && n>1 &&a[i]!=a[i+1]){
         printf("%d",res);
     }
     else{
