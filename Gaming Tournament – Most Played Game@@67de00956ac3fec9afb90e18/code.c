@@ -5,7 +5,7 @@ int mostPlayedGame(int games[],int n){
     }
     for(int i=0;i<n;i++){
         if(freq[games[i]]>0){
-            printf("%d",freq[games[i]]);
+            printf("%d",games[i]);
         }
     }
 
