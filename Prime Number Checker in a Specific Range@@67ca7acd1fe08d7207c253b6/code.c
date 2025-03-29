@@ -1,4 +1,5 @@
-int isPrime(int a,int b){
+int printPrimesInRange(int a,int b){
+    int i;
     for(int i=a;i<=b;i++){
         int isPrime=1;
         for(int j=2;j<=i;j++){
