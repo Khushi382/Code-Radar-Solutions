@@ -1,8 +1,7 @@
 #include <stdio.h>
 int check(int a[],int n){
     for(int i=0;i<n;i++){
-        int max=a[0];
-        if(a[i]<a[i+1] && a[i+1]>a[i+2]){
+        if(a[i]>a[i-1] && a[i]>a[i+1]){
             return a[i];
         }
     }
