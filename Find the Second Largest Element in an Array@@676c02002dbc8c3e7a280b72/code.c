@@ -24,17 +24,12 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    for(int i=0;i<n;i++)
-    {
     int res=largest(a,n);
-    if(res!=0 && n>1 && a[i]!=a[i+1]){
+    if(res!=0 && n>1){
         printf("%d",res);
-        return 0;
-        break;
     }
     else{
         printf("-1");
-    }
     }
 
     
