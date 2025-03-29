@@ -8,9 +8,9 @@ int printPrimesInRange(int a,int b){
                 break;
             }
         }
-    }
-    if(isPrime){
+        if(isPrime){
         printf("%d ",i);
+    }
     }
 }
     
