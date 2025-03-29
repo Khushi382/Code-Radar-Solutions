@@ -9,9 +9,14 @@ int main() {
     }
     int t;
     scanf("%d", &t);
-    for (int i = 0; i < n - 1; i++) { 
-        if (a[i] + a[i + 1] == t) {
-            printf("%d %d\n", a[i], a[i + 1]);
+    for (int i = 0; i < n - 1; i++) 
+    { 
+       for (int j = i + 1; j < n; j++) 
+       { 
+            if (a[i] + a[j] == t) 
+            {
+                printf("%d %d\n", a[i], a[j]);
+            }
         }
     }
 
