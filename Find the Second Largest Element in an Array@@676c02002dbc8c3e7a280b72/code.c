@@ -1,5 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+int largest(int a[],int n){
+    for(int i=0;i<2;i++){
+        int min=i;
+        for(int j=i+1;j<n;j++){
+            if(a[j]<a[min]){
+                min=j;
+            }
+        }
+        if(min!=0){
+            int temp=a[min];
+            a[min]=a[i];
+            a[i]=temp;
+        }
+    }
+    return a[1]
+}
 
 int main() {
     int a[100];
@@ -8,21 +24,14 @@ int main() {
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
-    int largest = a[0], secondLargest = -1;
-    if(n<2){
-        printf("%d",-1);
-        return 0;
+    int res=larges(a,n);
+    if(res!=0){
+        printf("%d",res);
     }
-    for (int i = 1; i < n; i++) {
-        if (a[i] > largest) {
-            secondLargest = largest;
-            largest = a[i];
-        } 
-        else if (a[i]> secondLargest && a[i]!= largest ){
-            secondLargest = a[i];   
-        }
+    else{
+        printf("-1");
     }
-    printf("%d\n",secondLargest);
+
     
 
     return 0;
