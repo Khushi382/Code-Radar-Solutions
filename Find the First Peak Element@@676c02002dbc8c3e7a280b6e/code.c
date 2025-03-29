@@ -4,7 +4,6 @@ int check(int a[],int n){
         int max=0;
         if(a[i]>a[i+1] && a[i]>a[i-1]){
             max=a[i];
-            return 0;
         }
     }
 }
@@ -18,7 +17,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    if(check(a,n)==1){
+    if(check(a,n)){
         printf("%d",max);
     }
     else{
