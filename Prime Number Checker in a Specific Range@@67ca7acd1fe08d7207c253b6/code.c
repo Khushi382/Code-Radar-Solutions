@@ -7,7 +7,7 @@ int printPrimesInRange(int a,int b){
         }
         else
         {
-        for(int j=2;j<=i;j++)
+        for(int j=2;j*j<=i;j++)
         {
             if(i%j==0)
             {
@@ -16,9 +16,13 @@ int printPrimesInRange(int a,int b){
             }
         }
         }
-        if(isPrime){
+        if(isPrime)
+        {
         printf("%d ",i);
-    }
+        }
+        else{
+            printf("No prime numbers");
+        }
     }
 }
     
