@@ -20,7 +20,7 @@ int main(){
     }
         int res=check(a,n);
         if(res!=-1){
-            printf("%d",check(a,n));
+            printf("%d",res);
         }
         else{
             printf("%d",-1);
