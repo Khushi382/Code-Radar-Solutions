@@ -5,7 +5,7 @@ int countGlovePairs(int gloves[],int n){
         freq[gloves[i]]++;
     }
     for(int i=0;i<n;i++){
-            maxfreq=freq[i]/2;
+            maxfreq=maxfreq+freq[i]/2;
     }
     return maxfreq;
 }
